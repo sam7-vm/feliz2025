@@ -1,0 +1,77 @@
+/* Estilo general */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #1e90ff, #ff6347);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+/* Contenedor principal */
+.container {
+    text-align: center;
+    animation: fadeIn 2s;
+}
+
+h1 {
+    font-size: 3rem;
+    text-shadow: 0 0 10px yellow, 0 0 20px orange;
+}
+
+p {
+    font-size: 1.5rem;
+    margin: 20px;
+    color: #fdfdfd;
+}
+
+button {
+    background-color: #ff4500;
+    color: white;
+    padding: 15px 25px;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 10px;
+    transition: transform 0.3s;
+}
+
+button:hover {
+    transform: scale(1.1);
+    background-color: #ff6347;
+}
+
+/* Estilo del contenedor del juego */
+#game-container {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+}
+
+canvas {
+    background: black;
+    margin: 20px;
+    border: 2px solid white;
+}
+
+/* Animación */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.hidden {
+    display: none;
+}
